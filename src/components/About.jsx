@@ -13,7 +13,7 @@ const About = () => {
 
         <br />
 
-        <p className="text-xl">
+        <p className="text-xl ">
           My coding journey is like a thrilling game level—each line of code a
           strategic move, every design element a pixel in the grand adventure of
           user interfaces. When I&apos;m not immersed in the matrix of HTML,
