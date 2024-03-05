@@ -18,8 +18,8 @@ const Home = () => {
             visually stunning and user-friendly digital experiences. When
             I&apos;m not immersed in the world of code and design, you&apos;ll
             often catch me showcasing my skills on the virtual soccer field in
-            FIFA – where I bring the same precision and strategy that define my
-            development and design work.
+            FIFA 🎮 – where I bring the same precision and strategy that define
+            my development and design work.
           </p>
           <div>
             <button className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-red-700 cursor-pointer">
