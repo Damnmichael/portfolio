@@ -32,11 +32,11 @@ const NavBar = () => {
       <div>
         <h1 className="text-5xl font-signature ml-2">Mhill </h1>
       </div>
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex flex-1 items-center justify-center">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium hover:scale-110 duration-200 text-gray-500"
+            className="px-4 cursor-pointer capitalize font-medium hover:scale-110 duration-200 text-gray-500 "
           >
             {link}
           </li>
