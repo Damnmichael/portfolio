@@ -34,7 +34,7 @@ const Skills = () => {
       style: "shadow-blue-600",
     },
     {
-      id: 6,
+      id: 5,
       src: tailwind,
       title: "TAILWIND",
       style: "shadow-sky-400",
