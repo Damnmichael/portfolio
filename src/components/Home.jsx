@@ -1,18 +1,24 @@
-import profile from "../assets/profile.png";
+import { ReactTyped } from "react-typed";
+import profile from "../assets/sss.jpeg";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div
-      name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
-    >
+    <div name="home" className="h-screen w-full bg-white">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row gap-20">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            I&apos;m a FrontEnd Developer
+          <h2 className="text-4xl sm:text-7xl font-bold text-gray-800">
+            I&apos;m a{" "}
           </h2>
+          <ReactTyped
+            className="text-4xl sm:text-7xl font-bold text-gray-800"
+            strings={["Frontend Developer", "UI Designer", "Problem Solver"]}
+            typeSpeed={60}
+            backSpeed={100}
+            loop
+          />
+
           <p className="text-gray-500 py-4 ">
             👋 Hey there! I&apos;m Michael Gafah, a passionate Frontend
             Developer and User Interface Designer with a knack for crafting
@@ -40,7 +46,7 @@ const Home = () => {
           <img
             src={profile}
             alt="my profile"
-            className="mx-auto w-2/3 md:w-full"
+            className="mx-auto w-2/3 md:w-full lg:w-[1500px]"
           />
         </div>
       </div>

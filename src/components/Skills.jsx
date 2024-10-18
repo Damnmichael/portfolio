@@ -5,7 +5,7 @@ import reactImage from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
 import vite from "../assets/vite.png";
 import figma from "../assets/figma.png";
-import github from "../assets/github.png";
+import github from "../assets/ggit.png";
 
 const Skills = () => {
   const techs = [
