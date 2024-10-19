@@ -6,8 +6,8 @@ import { Link } from "react-scroll";
 const Home = () => {
   return (
     <div name="home" className="h-screen w-full bg-white">
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row gap-20">
-        <div className="flex flex-col justify-center h-full">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
+        <div className=" w-full flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-gray-800">
             I&apos;m a{" "}
           </h2>
@@ -20,13 +20,8 @@ const Home = () => {
           />
 
           <p className="text-gray-500 py-4 ">
-            👋 Hey there! I&apos;m Michael Gafah, a passionate Frontend
-            Developer and User Interface Designer with a knack for crafting
-            visually stunning and user-friendly digital experiences. When
-            I&apos;m not immersed in the world of code and design, you&apos;ll
-            often catch me showcasing my skills on the virtual soccer field in
-            FIFA 🎮 – where I bring the same precision and strategy that define
-            my development and design work.
+             Dedicated to crafting seamless digital experiences.Dive
+            in to see how I turn ideas into reality.
           </p>
           <div>
             <Link
@@ -46,7 +41,7 @@ const Home = () => {
           <img
             src={profile}
             alt="my profile"
-            className="mx-auto w-2/3 md:w-full lg:w-[1500px]"
+            className="mx-auto w-2/3 md:w-full lg:w-[s500px]"
           />
         </div>
       </div>
