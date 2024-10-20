@@ -49,12 +49,12 @@ const About = () => {
 
         <div className="flex flex-col md:flex-row gap-12 items-center justify-center">
           <motion.div className="md:w-1/2 space-y-6" variants={itemVariants}>
-            <p className="text-xl leading-relaxed text-gray-500">
+            <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-500">
               👋 Hey there! I&apos;m Michael Gafah, a passionate Frontend
               Developer and User Interface Designer with a knack for crafting
               visually stunning and user-friendly digital experiences.
             </p>
-            <p className="text-xl leading-relaxed text-gray-500">
+            <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-500">
               When I&apos;m not immersed in the world of code and design,
               you&apos;ll often catch me showcasing my skills on the virtual
               soccer field in FIFA 🎮 – where I bring the same precision and

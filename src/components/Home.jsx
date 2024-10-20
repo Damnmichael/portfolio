@@ -20,8 +20,8 @@ const Home = () => {
           />
 
           <p className="text-gray-500 py-4 ">
-             Dedicated to crafting seamless digital experiences.Dive
-            in to see how I turn ideas into reality.
+            Dedicated to crafting seamless digital experiences.Dive in to see
+            how I turn ideas into reality.
           </p>
           <div>
             <Link
@@ -41,7 +41,7 @@ const Home = () => {
           <img
             src={profile}
             alt="my profile"
-            className="mx-auto w-2/3 md:w-full lg:w-[s500px]"
+            className="mx-auto w-2/3 md:w-full lg:w-[500px] hidden md:block"
           />
         </div>
       </div>
