@@ -74,11 +74,11 @@ const About = () => {
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md text-center"
+                className="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center justify-center"
                 variants={itemVariants}
               >
-                <item.icon className="text-4xl text-red-700 mx-auto mb-4 " />
-                <h3 className="text-lg font-semibold text-gray-800">
+                <item.icon className="text-5xl md:text-4xl text-red-700 mb-4" />
+                <h3 className="text-base md:text-lg font-semibold text-gray-800">
                   {item.title}
                 </h3>
               </motion.div>

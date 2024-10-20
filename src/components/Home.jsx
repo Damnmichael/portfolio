@@ -1,5 +1,5 @@
 import { ReactTyped } from "react-typed";
-import profile from "../assets/sss.jpeg";
+import profile from "../assets/lap.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from "react-scroll";
 
@@ -8,11 +8,11 @@ const Home = () => {
     <div name="home" className="h-screen w-full bg-white">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
         <div className=" w-full flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font-bold text-gray-800">
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-800">
             I&apos;m a{" "}
           </h2>
           <ReactTyped
-            className="text-4xl sm:text-7xl font-bold text-gray-800"
+            className="text-4xl md:text-6xl font-bold text-gray-800"
             strings={["Frontend Developer", "UI Designer", "Problem Solver"]}
             typeSpeed={60}
             backSpeed={100}
