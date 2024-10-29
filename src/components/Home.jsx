@@ -5,21 +5,21 @@ import { Link } from "react-scroll";
 
 const Home = () => {
   return (
-    <div name="home" className="h-screen w-full bg-white">
+    <div name="home" className="h-screen w-full bg-black">
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row ">
         <div className=" w-full flex flex-col justify-center h-full">
-          <h2 className="text-4xl md:text-6xl font-bold text-gray-800">
+          <h2 className="text-4xl md:text-6xl font-bold text-white">
             I&apos;m a{" "}
           </h2>
           <ReactTyped
-            className="text-4xl md:text-6xl font-bold text-gray-800"
+            className="text-4xl md:text-6xl font-bold text-red-700"
             strings={["Frontend Developer", "UI Designer", "Problem Solver"]}
             typeSpeed={60}
             backSpeed={100}
             loop
           />
 
-          <p className="text-gray-500 py-4 ">
+          <p className="text-white py-4  text-xl">
             Dedicated to crafting seamless digital experiences.Dive in to see
             how I turn ideas into reality.
           </p>

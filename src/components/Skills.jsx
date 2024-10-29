@@ -56,42 +56,27 @@ const Skills = () => {
   ];
 
   return (
-    // <div
-    //   name="skills"
-    //   className="bg-white w-full h-screen"
-    // >
-    //   <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-gray-800">
-    //     <div>
-    //       <p className="text-4xl font-bold  border-gray-500 p-2 inline">
-    //         Skills
-    //       </p>
-    //       <p className="py-6">
-    //         These are the technologies I&apos;ve worked with
-    //       </p>
-    //     </div>
-     <div
+    <div
       name="skills"
-      className="w-full min-h-screen bg-white text-gray-800 py-16 flex items-center"
-      
+      className="w-full min-h-screen bg-black text-red-700 py-16 flex items-center"
     >
-      <div
-        className="max-w-screen-xl w-full px-4 mx-auto"
-       
-      >
-        <div className=" mb-16">
-          <h2 className="text-4xl font-bold text-gray-800">
+      <div className="max-w-screen-xl w-full px-4 mx-auto">
+        <div className="mb-16">
+          <h2 className="text-4xl font-bold text-white">
             Tech <span className="text-red-700">Stacks</span>
           </h2>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 text-center py-4 sm:py-8 px-4 sm:px-12">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 text-center">
           {techs.map(({ id, Icon, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg`}
+              className="border border-white/20 hover:scale-105 duration-500 rounded-lg aspect-square flex flex-col items-center justify-center p-4"
             >
-              <Icon className={`w-12 h-12 sm:w-20 sm:h-20 mx-auto ${style}`} />
-              <p className="mt-2 sm:mt-4 text-gray-800 font-semibold text-sm sm:text-base max-w-[90%] mx-auto">{title}</p>
+              <Icon className={`w-12 h-12 sm:w-16 sm:h-16 mx-auto ${style}`} />
+              <p className="mt-4 text-white font-semibold text-sm sm:text-base">
+                {title}
+              </p>
             </div>
           ))}
         </div>

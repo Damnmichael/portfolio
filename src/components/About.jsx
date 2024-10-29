@@ -32,7 +32,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full min-h-screen bg-white text-gray-800 py-16 flex items-center"
+      className="w-full min-h-screen bg-black text-gray-800 py-16 flex items-center"
       ref={ref}
     >
       <motion.div
@@ -42,19 +42,19 @@ const About = () => {
         animate={isInView ? "visible" : "hidden"}
       >
         <div className=" mb-16">
-          <h2 className="text-4xl font-bold text-gray-800">
+          <h2 className="text-4xl font-bold text-white">
             About <span className="text-red-700">Me</span>
           </h2>
         </div>
 
         <div className="flex flex-col md:flex-row gap-12 items-center justify-center">
           <motion.div className="md:w-1/2 space-y-6" variants={itemVariants}>
-            <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-500">
+            <p className="text-base md:text-lg lg:text-xl leading-relaxed text-white">
               👋 Hey there! I&apos;m Michael Gafah, a passionate Frontend
               Developer and User Interface Designer with a knack for crafting
               visually stunning and user-friendly digital experiences.
             </p>
-            <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-500">
+            <p className="text-base md:text-lg lg:text-xl leading-relaxed text-white">
               When I&apos;m not immersed in the world of code and design,
               you&apos;ll often catch me showcasing my skills on the virtual
               soccer field in FIFA 🎮 – where I bring the same precision and
@@ -74,11 +74,12 @@ const About = () => {
             ].map((item, index) => (
               <motion.div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md text-center flex flex-col items-center justify-center"
+                className=" p-8 rounded-lg text-center flex flex-col items-center justify-center aspect-square border border-white/20 shadow-lg 
+              hover:bg-white/20 hover:border-white/40 transition-all "
                 variants={itemVariants}
               >
                 <item.icon className="text-5xl md:text-4xl text-red-700 mb-4" />
-                <h3 className="text-base md:text-lg font-semibold text-gray-800">
+                <h3 className="text-base md:text-lg font-semibold text-white ">
                   {item.title}
                 </h3>
               </motion.div>

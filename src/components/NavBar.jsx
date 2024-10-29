@@ -30,26 +30,32 @@ const NavBar = () => {
 
   return (
     <div className="flex justify-between items-center w-full h-20 text-white fixed px-4 backdrop-blur-sm z-50">
-      <div>
-        <h1 className="text-xl  ml-2 text-gray-500">DEV MHILL </h1>
+      <div className="w-[200px]">
+        <h1 className="text-xl ml-2 text-white">DEV MHILL</h1>
       </div>
-      <ul className="hidden md:flex flex-1 items-center justify-center">
-        {links.map(({ id, link }) => (
-          <li
-            key={id}
-            className="px-4 cursor-pointer capitalize font-medium hover:scale-110 duration-200 text-gray-500 "
-          >
-            <Link to={link} smooth duration={500}>
-              {link}
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <div
-        onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
-      >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+      <div className="absolute left-1/2 transform -translate-x-1/2">
+        <ul className="hidden md:flex items-center justify-center gap-4">
+          {links.map(({ id, link }) => (
+            <li
+              key={id}
+              className="px-6 py-2 cursor-pointer capitalize font-medium hover:scale-105 duration-200 
+              bg-white/10 backdrop-blur-sm rounded-full border border-white/20 shadow-lg 
+              hover:bg-white/20 hover:border-white/40 transition-all"
+            >
+              <Link to={link} smooth duration={500}>
+                {link}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="w-[200px] flex justify-end">
+        <div
+          onClick={() => setNav(!nav)}
+          className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        >
+          {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        </div>
       </div>
 
       {nav && (
