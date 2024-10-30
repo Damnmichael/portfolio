@@ -1,54 +1,57 @@
 import portfoliocover from "../assets/portfoliocover.webp";
+import TipGenieImage from "../assets/macBook01.png";
+import NFTImage from "../assets/hp.png";
+import watchList from "../assets/watchList.png";
+import ExploreGhana from "../assets/explore.png";
+import Vitashpere from "../assets/vitashpere.png";
+
 import { useState } from "react";
 
 const projectsData = [
+  
   {
     id: "project1",
-    title: "Easy Pay",
+    title: "Tip Genie",
     description:
-      "Detailed project description goes here. Explain the project goals, your role, and the impact it had. Make it engaging and informative.",
-    image: portfoliocover,
+      "A soccer prediction platform designed to offer accurate predictions from multiple leagues. I created both the desktop and mobile web views using Figma, focusing on a user-friendly layout and clear information display.",
+    image: TipGenieImage,
     tags: ["Figma", "UI/UX"],
     link: "#",
   },
   {
     id: "project2",
-    title: "Tip Genie",
-    description: "Another project description...",
-    image: portfoliocover,
-    tags: ["React", "Node.js"],
+    title: "NFT Landing Page",
+    description:
+      "Designed a dynamic and engaging landing page for an NFT platform, focusing on a visually appealing layout that effectively introduces users to the NFT marketplace. The design highlights key features and collections to enhance user engagement.",
+    image: NFTImage,
+    tags: ["Figma", "UI/UX"],
     link: "#",
   },
   {
     id: "project3",
-    title: "NFT Landing Page",
-    description: "Another project description...",
-    image: portfoliocover,
+    title: "WatchList",
+    description:
+      "A mobile app design crafted to provide a Netflix-like experience, enabling users to stream and download movies without any monthly subscription. The design emphasizes a seamless, user-friendly interface to make discovering and watching content easy and enjoyable.",
+    image: watchList,
     tags: ["React", "Node.js"],
     link: "#",
   },
   {
     id: "project4",
-    title: "WatchList",
-    description: "Another project description...",
-    image: portfoliocover,
-    tags: ["React", "Node.js"],
+    title: "Explore Ghana",
+    description:
+      "A mobile app design created to guide tourists through Ghana's vibrant attractions, from restaurants and hotels to beaches and arcades. The app provides updated images, concise descriptions, pricing details where applicable, and a Get Directions feature that links directly to Google Maps for seamless navigation.",
+    image: ExploreGhana,
+    tags: ["Figma", "UI/UX"],
     link: "#",
   },
   {
     id: "project5",
-    title: "Explore Ghana",
-    description: "Another project description...",
-    image: portfoliocover,
-    tags: ["React", "Node.js"],
-    link: "#",
-  },
-  {
-    id: "project6",
     title: "Vitashpere",
-    description: "Another project description...",
-    image: portfoliocover,
-    tags: ["React", "Node.js"],
+    description:
+      "An intuitive insurance dashboard design dedicated to managing clients, insurance policies, and policy details efficiently. The layout is structured to simplify access to critical information, streamlining policy management for optimal user experience.",
+    image: Vitashpere,
+    tags: ["Figma", "UI/UX"],
     link: "#",
   },
   // Add more projects as needed
@@ -60,7 +63,7 @@ const Projects = () => {
 
   return (
     <div
-      name="skills"
+      name="projects"
       className="w-full min-h-screen bg-black text-red-700 py-16 flex items-center"
     >
       <div className="max-w-screen-xl w-full px-4 mx-auto">
@@ -141,11 +144,11 @@ const Projects = () => {
                             <img
                               src={project.image}
                               alt={`${project.title} thumbnail`}
-                              className="w-full h-64 object-cover rounded-lg"
+                              className="w-full h-auto object-cover rounded-lg"
                             />
                           </div>
                           <div className="md:w-1/2">
-                            <p className="text-gray-400 mb-4">
+                            <p className="text-white mb-4">
                               {project.description}
                             </p>
                             <div className="flex flex-wrap gap-2 mb-4">
@@ -172,37 +175,10 @@ const Projects = () => {
                 ))}
               </div>
             ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {/* Development Project Card */}
-                <div className="bg-gray-900 rounded-lg overflow-hidden hover:shadow-lg hover:shadow-red-700/20 transition-all duration-300">
-                  <img
-                    src={portfoliocover}
-                    alt="Project thumbnail"
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-white mb-2">
-                      Development Project
-                    </h3>
-                    <p className="text-gray-400 mb-4">
-                      Brief project description here
-                    </p>
-                    <div className="flex justify-between items-center">
-                      <a href="#" className="text-red-700 hover:text-red-500">
-                        View Project
-                      </a>
-                      <div className="flex gap-2">
-                        <span className="px-2 py-1 text-sm bg-gray-800 rounded">
-                          React
-                        </span>
-                        <span className="px-2 py-1 text-sm bg-gray-800 rounded">
-                          Node.js
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Add more development project cards as needed */}
+              <div className="flex items-center justify-center min-h-[300px]">
+                <p className="text-white text-base md:text-xl text-center">
+                  Oooops, developments projects will be uploaded soon 🙂‍↕️
+                </p>
               </div>
             )}
           </div>

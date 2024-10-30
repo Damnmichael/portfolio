@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+
+  useEffect(() => {
+    if (nav) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [nav]);
 
   const links = [
     {
@@ -59,7 +67,7 @@ const NavBar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-20 left-0 w-full h-[calc(100vh-5rem)] bg-gradient-to-b from-white/70 to-gray-800/70 backdrop-blur-sm text-gray-500">
+        <ul className="flex flex-col justify-center items-center absolute top-20 left-0 w-full h-[calc(100vh-5rem)] bg-black backdrop-blur-sm text-white">
           {links.map(({ id, link }) => (
             <li
               key={id}

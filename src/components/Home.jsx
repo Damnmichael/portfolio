@@ -19,7 +19,7 @@ const Home = () => {
             loop
           />
 
-          <p className="text-white py-4  text-xl">
+          <p className="text-white py-4 text-base md:text-xl">
             Dedicated to crafting seamless digital experiences.Dive in to see
             how I turn ideas into reality.
           </p>
