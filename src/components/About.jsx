@@ -50,15 +50,15 @@ const About = () => {
         <div className="flex flex-col md:flex-row gap-12 items-center justify-center">
           <motion.div className="md:w-1/2 space-y-6" variants={itemVariants}>
             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-white">
-              👋 Hey there! I&apos;m Michael Gafah, a passionate Frontend
-              Developer and User Interface Designer with a knack for crafting
-              visually stunning and user-friendly digital experiences.
+              Hey! I’m Michael Gafah – a frontend developer and UI designer with
+              a genuine love for building sleek, user-friendly digital
+              experiences. I’m all about making sure everything not only looks
+              great but works seamlessly too.
             </p>
             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-white">
-              When I&apos;m not immersed in the world of code and design,
-              you&apos;ll often catch me showcasing my skills on the virtual
-              soccer field in FIFA 🎮 – where I bring the same precision and
-              strategy that define my development and design work.
+              Outside of coding and design, I’m usually on the virtual soccer
+              field in FIFA 🎮. It’s my go-to spot for some fun, where I get to
+              bring a bit of the same focus and creativity I use in my projects.
             </p>
           </motion.div>
 
