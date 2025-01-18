@@ -139,17 +139,8 @@ const About = () => {
                 ></div>
                 <div className="relative p-8 rounded-lg bg-[#1E293B]/50 backdrop-blur-sm flex flex-col items-center justify-center aspect-square hover:transform hover:scale-105 transition-all duration-300">
                   <item.icon
-                    className="text-5xl md:text-4xl mb-4"
+                    className="text-5xl md:text-4xl mb-4 text-white"
                     weight="bold"
-                    style={{
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                      backgroundImage: `linear-gradient(to right, ${
-                        item.gradient.includes("pink")
-                          ? "#ec4899, #9333ea"
-                          : "#06b6d4, #3b82f6"
-                      })`,
-                    }}
                   />
                   <h3 className="text-base md:text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-gray-200 to-white">
                     {item.title}
